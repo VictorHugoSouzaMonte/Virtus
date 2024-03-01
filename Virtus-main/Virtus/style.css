@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+:root {
+    --cor--primaria: #ffffff;
+    --cor--secundaria: #000000;
+    --cor--terciaria: #6E6E73;
+    --cor--quartenaria: #1D1D1F;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 48px;
+}
+
+h2 {
+    font-weight: 300;
+    font-size: 38.4px;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 30.72;
+}
+
+h4 {
+    font-weight: 400;
+    font-size: 24.576px;
+}
+
+h5 {
+    font-weight: 300;
+    font-size: 19.661px;
+}
+
+h6 {
+    font-weight: 200;
+    font-size: 15.729px;
+}
+
+p {
+    font-weight: 300;
+    font-size: 15.729px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    position: fixed;
+    padding: 0.5% 100% 0.25% 5%;
+    background-color: var(--cor--primaria);
+    box-shadow: 0 0 6px 0 var(--cor--secundaria);
+}
+
+nav {
+    display: flex;
+    gap: 72px;
+}
+
+.menu__nav {
+    padding: 2.5px 5px 2.5px 5px;
+    border-radius: 20px;
+    background-color: var(--cor--primaria);
+    color: var(--cor--secundaria);
+    text-decoration: none;
+}
+
+.menu__nav:hover {
+    background-color: var(--cor--secundaria);
+    color: var(--cor--primaria);
+}
+
+.itens__cabecalho {
+    display: flex;
+    gap: 24px;
+}
+
+.barra__de__pesquisa {
+    display: flex;
+    align-items: center;
+    padding: 0 0.5px 0 0.5px;
+    width: 175px;
+    height: 40px;
+    border-radius: 25px;
+    box-shadow: 0 0 6px 0 var(--cor--secundaria);
+}
+
+input {
+    width: 125px;
+    height: 30px;
+    border: 0;
+    outline: 0 none;
+}
+
+main {
+    padding: 80px 40px 80px 40px;
+}
+
+.titulo {
+    display: flex;
+    gap: 8px;
+}
+
+.continuacao__h1 {
+    font-weight: 700;
+    font-size: 48px;
+    color: #6e6e73;
+    padding: 0 0 40px 0;
+}
+
+.lista__produtos {
+    display: flex;
+    padding: 0 0 40px 0;
+    gap: 8px;
+}
+
+.produtos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.produtos:hover {
+    box-shadow: 0 0 2px 0 var(--cor--secundaria);
+}
+
+.grupo__carrosel__titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: last baseline;
+}
+
+.conjunto__de__carrosel {
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px 0 120px 0;
+    gap: 16px;
+}
+
+.carrosel__preto {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    display: grid;
+    width: 400px;
+    height: 500px;
+    border-radius: 20px;
+    background-color: var(--cor--secundaria);
+    color: var(--cor--primaria);
+    box-shadow: 0 0 6px 0 var(--cor--secundaria);
+}
+
+.carrosel__branco {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    display: grid;
+    width: 400px;
+    height: 500px;
+    border-radius: 20px;
+    background-color: var(--cor--primaria);
+    color: var(--cor--secundaria);
+    box-shadow: 0 0 6px 0 var(--cor--secundaria);
+}
+
+.carrosel__preto:hover {
+    box-sizing: border-box;
+    box-shadow: 0 0 6px 6px var(--cor--terciaria);
+}
+
+.carrosel__branco:hover {
+    box-sizing: border-box;
+    box-shadow: 0 0 6px 6px var(--cor--terciaria);
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    text-align: center;
+    padding: 80px 40px 160px 40px;
+    background-color: var(--cor--quartenaria);
+    color: var(--cor--terciaria);
+}
+
+.lista__ajuda {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 20px 0 0 0;
+}
+
+.ajuda {
+    font-weight: 200;
+    font-size: 15.729px;
+    text-decoration: none;
+    color: var(--cor--terciaria);
+}
+
+.ajuda:hover {
+    color: var(--cor--primaria);
+}
+
+.ajuda:active {
+    color: yellow;
+}
+
+.lista__sobre {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 20px 0 0 0;
+}
+
+.sobre{
+    font-weight: 200;
+    font-size: 15.729px;
+    text-decoration: none;
+    color: var(--cor--terciaria);
+}
+
+.sobre:hover {
+    color: var(--cor--primaria);
+}
+
+.sobre:active {
+    color: yellow;
+}
+
+.redes {
+    display: flex;
+    gap: 24px;
+    padding: 20px 0 0 0;
+}
+
+.pagamento {
+    display: flex;
+    gap: 24px;
+    padding: 20px 0 0 0;
+}

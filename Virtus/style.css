@@ -4,7 +4,7 @@
     --cor--primaria: #ffffff;
     --cor--secundaria: #000000;
     --cor--terciaria: #6E6E73;
-    --cor--quartenaria: #1D1D1F;
+    --cor--quartenaria: #1D1D1F;    
 }
 
 * {
@@ -20,11 +20,13 @@ body {
 h1 {
     font-weight: 700;
     font-size: 48px;
+    padding: 75px 0px 0px 0px;
 }
 
 h2 {
     font-weight: 300;
     font-size: 38.4px;
+    padding: 0px 0px 10px 0px;
 }
 
 h3 {
@@ -55,8 +57,9 @@ p {
 header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 0px 40px 0px 40px;
+    gap: 100px;
+    position: fixed;
+    padding: 0.5% 100% 0.25% 5%;
     background-color: var(--cor--primaria);
     box-shadow: 0 0 6px 0 var(--cor--secundaria);
 }
@@ -113,13 +116,13 @@ main {
 .continuacao__h1 {
     font-weight: 700;
     font-size: 48px;
-    color: #6e6e73;
-    padding: 0 0 40px 0;
+    color: hsl(240, 2%, 44%);
+    padding: 75px 0 75px 0;
 }
 
 .lista__produtos {
     display: flex;
-    padding: 0 0 40px 0;
+    padding: 0px 0px 75px 0px;
     gap: 8px;
 }
 
@@ -136,13 +139,14 @@ main {
 .grupo__carrosel__titulo {
     display: flex;
     flex-direction: column;
-    align-items: last baseline;
+    align-items:first baseline;
+    padding: 0px 0px 0px 100px;
 }
 
 .conjunto__de__carrosel {
     display: flex;
     justify-content: flex-end;
-    padding: 5px 0 120px 0;
+    padding: 5px 0px 120px 0px;
     gap: 16px;
 }
 
@@ -150,7 +154,7 @@ main {
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    display: grid;
+    display: grid;  
     width: 400px;
     height: 500px;
     border-radius: 20px;
@@ -163,7 +167,7 @@ main {
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    display: grid;
+    display: grid;  
     width: 400px;
     height: 500px;
     border-radius: 20px;
